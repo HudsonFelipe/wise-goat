@@ -1,7 +1,12 @@
+import { LogoBaixo, LogoTopo, Container, Botao } from "./styled";
+
 function Logo() {
     return(
-        <H3>Wise</H3>,
-        <H1>Goat</H1>
+        <Container>
+        <LogoTopo>Wise</LogoTopo>
+        <LogoBaixo>Goat</LogoBaixo>
+        <Botao>Pedir conselho</Botao> 
+        </Container>
     )
 }
 
