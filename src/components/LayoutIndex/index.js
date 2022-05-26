@@ -1,12 +1,12 @@
-import { Imagem } from './styles'
+import { Imagem, Container } from './styles'
 import  Logo  from '../Logo'
 
 function Layout() {
     return (
-        <>
-        <Logo></Logo>
-        <Imagem src='images/bodezinho.png'></Imagem>
-        </>
+        <Container>
+        <Logo />
+            <Imagem src='images/bodezinho.png'></Imagem>
+        </Container>
     )
 }
 

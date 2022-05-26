@@ -23,4 +23,6 @@ export const Botao = styled.button`
     border: none;
     padding: 15px 50px;
     border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
 `
