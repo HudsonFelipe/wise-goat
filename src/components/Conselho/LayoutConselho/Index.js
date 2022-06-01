@@ -4,7 +4,6 @@ import { Container, Mensagem, IMG } from './styled';
 
 function Layout({linkImg, mensagem}) {
     
-
     return (
         <>
         <Logo />
@@ -16,22 +15,6 @@ function Layout({linkImg, mensagem}) {
     )
 }
 
-
-
-
-export async function getStaticProps() {
-    
-    
-
-
-    const mensagem = await carregarMensagem()
-    console.log(mensagem)
-    
-    return {
-        props: {},
-        
-    }
-}
 
 
 export default Layout;

@@ -2,12 +2,13 @@ import Layout from "../components/Conselho/LayoutConselho/Index";
 import { createClient } from 'pexels';
 
 function Conselho({ linkImg, mensagem }) {
+
     return (
         <Layout linkImg={linkImg} mensagem={mensagem} />
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps(){
     const client = createClient(process.env.PEXELS_KEY);
     const query = 'baby goat';
 
@@ -18,22 +19,16 @@ export async function getStaticProps() {
     });
 
     //Realiza a busca do conselho
-    const mensagem = await fetch('https://api.adviceslip.com/advice')
-    .then((response) => response.json())
-    .then((response) => response.slip.advice)
-
-    
-
-    
+        const mensagem = await fetch('https://api.adviceslip.com/advice')
+        .then((response) => response.json())
+        .then((response) => response.slip.advice)
 
     return {
         props: {
-            linkImg,
-            mensagem
-        },
-        
+            mensagem,
+            linkImg
+        }
     }
-
 }
 
 export default Conselho;
