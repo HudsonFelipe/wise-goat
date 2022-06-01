@@ -1,7 +1,5 @@
 import Logo from '../Logo'
 import { Container, Mensagem, IMG } from './styled';
-import {carregarMensagem } from '../../../../lib/BuscaConselho'
-
 
 
 function Layout({linkImg, mensagem}) {
