@@ -5,7 +5,6 @@ function Logo() {
         <Container>
         <LogoTopo>Wise</LogoTopo>
         <LogoBaixo>Goat</LogoBaixo>
-        <Botao>Pedir conselho</Botao> 
         </Container>
     )
 }
