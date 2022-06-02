@@ -1,4 +1,4 @@
-import Layout from "../components/LayoutIndex/index";
+import Layout from "../components/Index/LayoutIndex/index";
 
 function Index() {
     return ( 
